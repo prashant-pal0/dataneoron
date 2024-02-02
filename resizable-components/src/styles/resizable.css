@@ -1,0 +1,173 @@
+/* Common styles for all screen sizes */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.addContainer,
+.update-section,
+.count,
+.Resize1,
+.Resize2,
+.Resize3 {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+.update-section h2,
+.count h2 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .addContainer,
+  .update-section,
+  .count,
+  .Resize1,
+  .Resize2,
+  .Resize3 {
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+}
+
+/* Styles for the table */
+.add-details-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  max-height: 200px; 
+  overflow-y: auto; 
+  display: block;
+}
+.add-details-container thead {
+  background-color: #3498db;
+  color: #fff;
+  position: sticky;
+  top: 0; 
+  z-index: 1;
+}
+
+.add-details-container th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-details-container td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-details-container tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+
+/* Styles for the modal overlay */
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(173, 216, 230, 0.8); /* Light blue color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the modal content */
+.ReactModal__Content {
+  position: relative;
+  background-color: #fff; /* White color */
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Close button styles */
+.ReactModal__CloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #3498db; 
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.ReactModal__CloseButton:hover {
+  color: #ff7675; 
+}
+
+/* Additional styles for the notification message */
+.notification-message {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #1c83af; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
